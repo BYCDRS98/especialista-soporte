@@ -1,6 +1,6 @@
 # 🌐 Portal Web Oficial - Especialista Cristian Dante Reyes Sandoval
 
-> Plataforma web moderna, elegante y de alto impacto visual para la distribución y descarga de programas e instaladores automatizados de software esencial (Office, VLC, Nitro PDF, WinRAR, AnyDesk, Zoom y Pack Todo-en-Uno).
+> Plataforma web moderna para la distribución y descarga de programas e instaladores automatizados de software esencial (Office, VLC, Nitro PDF, WinRAR, AnyDesk, Zoom y Pack Todo-en-Uno).
 
 ## 👨‍💻 Créditos
 - **Autor y Especialista**: Cristian Dante Reyes Sandoval.
