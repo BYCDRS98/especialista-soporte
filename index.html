@@ -3,53 +3,476 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Descarga de Programas - Soporte Técnico</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
-    body { background-color: #f4f6f9; color: #333; padding: 20px; }
-    header { text-align: center; margin-bottom: 30px; padding: 20px; background: #0078d4; color: white; border-radius: 8px; }
-    header h1 { font-size: 24px; }
-    header p { font-size: 14px; opacity: 0.9; margin-top: 5px; }
-    .container { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-    .card { background: white; border-radius: 8px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center; display: flex; flex-direction: column; justify-content: space-between; }
-    .card h3 { font-size: 18px; margin-bottom: 10px; color: #111; }
-    .card p { font-size: 13px; color: #666; margin-bottom: 20px; flex-grow: 1; }
-    .btn { display: inline-block; background-color: #107c41; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 14px; transition: background 0.2s; }
-    .btn:hover { background-color: #0b5a2f; }
-  </style>
+  <title>Especialista Cristian Dante Reyes Sandoval | Software Automatizado</title>
+  <meta name="description" content="Descarga instaladores y scripts automatizados de software básico esenciales: Office, VLC, Nitro PDF, WinRAR, AnyDesk y Zoom. Optimización y soporte técnico por Cristian Dante Reyes Sandoval.">
+
+  <!-- Favicon Tech -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Google Fonts: Outfit & Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Hojas de Estilo del Proyecto -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/effects.css">
 </head>
 <body>
 
-  <header>
-    <h1>Panel de Descargas Técnicas</h1>
-    <p>Selecciona el programa para iniciar la descarga directa</p>
-  </header>
+  <!-- Canvas de Fondo con Partículas Interactivas -->
+  <canvas id="particle-canvas"></canvas>
 
-  <div class="container">
+  <!-- Resplandores Ambientales de Fondo -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
 
-    <!-- TARJETA 1 -->
-    <div class="card">
-      <h3>Navegador Web</h3>
-      <p>Instalador offline de Google Chrome o Firefox.</p>
-      <!-- Reemplaza el 'href' con tu enlace de Release -->
-      <a class="btn" href="https://github.com/tu-usuario/tu-repo/releases/download/v1.0/ChromeSetup.exe">Descargar</a>
+  <!-- Barra de Navegación Glassmorphism -->
+  <nav class="navbar wrapper">
+    <a href="#" class="brand">
+      <div class="brand-icon">
+        <i class="fa-solid fa-terminal"></i>
+      </div>
+      <div class="brand-text">
+        <h2>CRISTIAN DANTE REYES</h2>
+        <span>Especialista TI & Automatización</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#catalogo"><i class="fa-solid fa-boxes-stacked"></i> Programas</a></li>
+      <li><a href="#terminal"><i class="fa-solid fa-code"></i> Simulación</a></li>
+      <li><a href="#instrucciones"><i class="fa-solid fa-circle-question"></i> Cómo Usar</a></li>
+      <li><a href="#contacto" class="nav-btn"><i class="fa-brands fa-whatsapp"></i> Contactar</a></li>
+    </ul>
+  </nav>
+
+  <main class="wrapper">
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="badge-specialist">
+        <span class="dot"></span>
+        <span>Especialista de Sistemas & Despliegue Silencioso</span>
+      </div>
+
+      <h1 class="hero-title">
+        ESPECIALISTA
+        <span class="name-highlight">CRISTIAN DANTE REYES SANDOVAL</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Agiliza la instalación de tu software esencial con scripts automatizados de última generación.
+        Sin pantallas repetitivas, sin publicidad y optimizados para Windows en un solo clic.
+      </p>
+
+      <div class="hero-actions">
+        <button class="btn btn-primary" data-software="all-in-one">
+          <i class="fa-solid fa-bolt-lightning"></i>
+          <span>Descargar Todo-en-Uno (AIO)</span>
+        </button>
+        <a href="#catalogo" class="btn btn-glass">
+          <i class="fa-solid fa-list-check"></i>
+          <span>Explorar Catálogo Individual</span>
+        </a>
+      </div>
+
+      <!-- Highlights & Ventajas Técnicas -->
+      <div class="hero-stats">
+        <div class="stat-box">
+          <div class="stat-icon"><i class="fa-solid fa-gauge-high"></i></div>
+          <div class="stat-info">
+            <h4>Instalación Rápida</h4>
+            <p>Ahorra más del 80% del tiempo de configuración habitual.</p>
+          </div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="stat-info">
+            <h4>100% Limpio y Seguro</h4>
+            <p>Cero barras de navegador, programas no deseados ni adware.</p>
+          </div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-icon"><i class="fa-solid fa-gears"></i></div>
+          <div class="stat-info">
+            <h4>Desatendido y Silencioso</h4>
+            <p>Ejecuta como administrador y olvídate de dar "Siguiente".</p>
+          </div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-icon"><i class="fa-brands fa-windows"></i></div>
+          <div class="stat-info">
+            <h4>Windows 10 / 11</h4>
+            <p>Totalmente compatible con arquitecturas de 64 y 32 bits.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASTER CARD DESTACADA (TODO EN UNO) -->
+    <div class="master-card glow-border" id="destacado">
+      <div class="master-card-content">
+        <div class="master-badge"><i class="fa-solid fa-fire"></i> Recomendado por el Especialista</div>
+        <h3>
+          <i class="fa-solid fa-wand-magic-sparkles" style="color: #38bdf8;"></i>
+          Instalador Maestro Todo-en-Uno (Batch & Winget)
+        </h3>
+        <p>
+          El script definitivo creado por Cristian Dante Reyes Sandoval. Descarga e instala en serie Office, VLC, Nitro PDF, WinRAR, AnyDesk y Zoom sin pausas y con configuración optimizada.
+        </p>
+        <div class="master-features-list">
+          <span class="master-feat-item"><i class="fa-solid fa-check"></i> Ejecución Desatendida</span>
+          <span class="master-feat-item"><i class="fa-solid fa-check"></i> Descargas Oficiales</span>
+          <span class="master-feat-item"><i class="fa-solid fa-check"></i> Cero Clics Extras</span>
+          <span class="master-feat-item"><i class="fa-solid fa-check"></i> Ligero (menos de 50 KB)</span>
+        </div>
+      </div>
+      <div class="master-card-action">
+        <button class="btn btn-primary" style="width: 100%; font-size: 1.1rem; padding: 18px 24px;" data-software="all-in-one">
+          <div class="download-progress"></div>
+          <span class="btn-text">
+            <i class="fa-solid fa-download"></i> Descargar Todo (.bat)
+          </span>
+        </button>
+      </div>
     </div>
 
-    <!-- TARJETA 2 -->
-    <div class="card">
-      <h3>Compresor 7-Zip</h3>
-      <p>Utilidad para descomprimir archivos ZIP, RAR y 7z.</p>
-      <a class="btn" href="https://github.com/tu-usuario/tu-repo/releases/download/v1.0/7zip.exe">Descargar</a>
-    </div>
+    <!-- SECCIÓN DE SIMULADOR DE TERMINAL EN VIVO -->
+    <section class="terminal-section" id="terminal">
+      <div class="section-header">
+        <span class="section-badge">Demostración en Vivo</span>
+        <h2 class="section-title">¿Cómo Funciona la Automatización?</h2>
+        <p class="section-description">
+          Mira en tiempo real cómo el script del Especialista Cristian Dante ejecuta las tareas de despliegue en consola de forma rápida y ordenada.
+        </p>
+      </div>
 
-    <!-- TARJETA 3 -->
-    <div class="card">
-      <h3>Lector PDF</h3>
-      <p>Visor ligero de archivos PDF para rápida lectura.</p>
-      <a class="btn" href="https://github.com/tu-usuario/tu-repo/releases/download/v1.0/PDFReader.exe">Descargar</a>
-    </div>
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div class="terminal-controls">
+            <span class="term-btn term-close"></span>
+            <span class="term-btn term-min"></span>
+            <span class="term-btn term-max"></span>
+          </div>
+          <div class="terminal-title">
+            <i class="fa-brands fa-windows"></i>
+            <span>PowerShell - Despliegue Automatizado [Cristian Dante Reyes]</span>
+          </div>
+          <button id="term-replay-btn" class="terminal-actions-btn" title="Reiniciar simulación">
+            <i class="fa-solid fa-rotate-right"></i> Reiniciar
+          </button>
+        </div>
+        <div class="terminal-body" id="terminal-content">
+          <!-- Las líneas dinámicas son renderizadas por js/terminal.js -->
+        </div>
+      </div>
+    </section>
 
+    <!-- SECCIÓN CATÁLOGO DE PROGRAMAS INDIVIDUALES -->
+    <section class="software-section" id="catalogo">
+      <div class="section-header">
+        <span class="section-badge">Programas Esenciales</span>
+        <h2 class="section-title">Descargas de Software Automatizado</h2>
+        <p class="section-description">
+          Selecciona el programa que necesitas para descargar su script o instalador con optimizaciones y parámetros silenciosos.
+        </p>
+      </div>
+
+      <div class="software-grid">
+        <!-- 1. Microsoft Office -->
+        <div class="software-card">
+          <div>
+            <div class="card-top">
+              <div class="app-icon icon-office">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <span class="card-badge">Ofimática</span>
+            </div>
+            <h3>Paquete Office 24 Completo</h3>
+            <p>Word, Excel, PowerPoint, Outlook y herramientas de productividad configuradas para instalación silenciosa corporativa.</p>
+            <div class="card-tags">
+              <span class="tag">#Word</span>
+              <span class="tag">#Excel</span>
+              <span class="tag">#PowerPoint</span>
+              <span class="tag">#ODT</span>
+            </div>
+          </div>
+          <button class="btn btn-download-card" data-software="office">
+            <div class="download-progress"></div>
+            <span class="btn-text">
+              <i class="fa-solid fa-cloud-arrow-down"></i> Descargar parte 1
+            </span>
+          </button>
+          <button class="btn btn-download-card" data-software="office1">
+            <div class="download-progress"></div>
+            <span class="btn-text">
+              <i class="fa-solid fa-cloud-arrow-down"></i> Descargar parte 2
+            </span>
+          </button>
+          </button>
+          <button class="btn btn-download-card" data-software="activadoroffice">
+            <div class="download-progress"></div>
+            <span class="btn-text">
+              <i class="fa-solid fa-cloud-arrow-down"></i> MAS_AIO
+            </span>
+          </button>
+        </div>
+
+        <!-- 2. VLC Media Player -->
+        <div class="software-card">
+          <div>
+            <div class="card-top">
+              <div class="app-icon icon-vlc">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <span class="card-badge">Multimedia</span>
+            </div>
+            <h3>VLC Media Player</h3>
+            <p>El reproductor de código abierto más confiable del mundo. Soporta todos los formatos de video y audio sin códecs extra.</p>
+            <div class="card-tags">
+              <span class="tag">#x64</span>
+              <span class="tag">#TodosLosCódecs</span>
+              <span class="tag">#HD</span>
+            </div>
+          </div>
+          <button class="btn btn-download-card" data-software="vlc">
+            <div class="download-progress"></div>
+            <span class="btn-text">
+              <i class="fa-solid fa-cloud-arrow-down"></i> Descargar VLC
+            </span>
+          </button>
+        </div>
+
+        <!-- 3. Nitro Pro PDF -->
+        <div class="software-card">
+          <div>
+            <div class="card-top">
+              <div class="app-icon icon-nitro">
+                <i class="fa-solid fa-file-pdf"></i>
+              </div>
+              <span class="card-badge">Documentos</span>
+            </div>
+            <h3>Nitro 14 Pro PDF</h3>
+            <p>Visualizador, editor, creador y convertidor de documentos PDF de nivel empresarial con soporte para firmas electrónicas.</p>
+            <div class="card-tags">
+              <span class="tag">#PDF</span>
+              <span class="tag">#Edición</span>
+              <span class="tag">#Conversión</span>
+            </div>
+          </div>
+          <button class="btn btn-download-card" data-software="nitro1">
+            <div class="download-progress"></div>
+            <span class="btn-text">
+              <i class="fa-solid fa-cloud-arrow-down"></i> Descargar Instalador
+            </span>
+          </button>
+          <button class="btn btn-download-card" data-software="nitro">
+            <div class="download-progress"></div>
+            <span class="btn-text">
+              <i class="fa-solid fa-cloud-arrow-down"></i> Descargar Activador
+            </span>
+          </button>
+        </div>
+
+        <!-- 4. WinRAR -->
+        <div class="software-card">
+          <div>
+            <div class="card-top">
+              <div class="app-icon icon-winrar">
+                <i class="fa-solid fa-file-zipper"></i>
+              </div>
+              <span class="card-badge">Compresión</span>
+            </div>
+            <h3>WinRAR x64</h3>
+            <p>Compresor de archivos de alta velocidad. Abre y genera formatos RAR, ZIP, 7-Zip, ISO y gestiona archivos pesados fácilmente.</p>
+            <div class="card-tags">
+              <span class="tag">#RAR</span>
+              <span class="tag">#ZIP</span>
+              <span class="tag">#64Bits</span>
+            </div>
+          </div>
+          <button class="btn btn-download-card" data-software="winrar">
+            <div class="download-progress"></div>
+            <span class="btn-text">
+              <i class="fa-solid fa-cloud-arrow-down"></i> Descargar WinRAR
+            </span>
+          </button>
+        </div>
+
+        <!-- 5. AnyDesk -->
+        <div class="software-card">
+          <div>
+            <div class="card-top">
+              <div class="app-icon icon-anydesk">
+                <i class="fa-solid fa-desktop"></i>
+              </div>
+              <span class="card-badge">Soporte TI</span>
+            </div>
+            <h3>AnyDesk Soporte</h3>
+            <p>Software ultra liviano para asistencia técnica remota. Conéctate al instante para diagnóstico, soporte y solución de problemas.</p>
+            <div class="card-tags">
+              <span class="tag">#AccesoRemoto</span>
+              <span class="tag">#Ligero</span>
+              <span class="tag">#Soporte</span>
+            </div>
+          </div>
+          <button class="btn btn-download-card" data-software="anydesk">
+            <div class="download-progress"></div>
+            <span class="btn-text">
+              <i class="fa-solid fa-cloud-arrow-down"></i> Descargar AnyDesk
+            </span>
+          </button>
+        </div>
+
+        <!-- 6. Zoom Meetings -->
+        <div class="software-card">
+          <div>
+            <div class="card-top">
+              <div class="app-icon icon-zoom">
+                <i class="fa-solid fa-video"></i>
+              </div>
+              <span class="card-badge">Reuniones</span>
+            </div>
+            <h3>Zoom Meetings</h3>
+            <p>Aplicación estándar para conferencias web, clases online y reuniones de trabajo con audio y video nítidos en alta resolución.</p>
+            <div class="card-tags">
+              <span class="tag">#Videollamadas</span>
+              <span class="tag">#Reuniones</span>
+              <span class="tag">#Chat</span>
+            </div>
+          </div>
+          <button class="btn btn-download-card" data-software="zoom">
+            <div class="download-progress"></div>
+            <span class="btn-text">
+              <i class="fa-solid fa-cloud-arrow-down"></i> Descargar Zoom
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN PASO A PASO (INSTRUCCIONES) -->
+    <section class="instructions-section" id="instrucciones">
+      <div class="section-header">
+        <span class="section-badge">Facilidad de Uso</span>
+        <h2 class="section-title">Solo 3 Pasos Sencillos</h2>
+        <p class="section-description">
+          El proceso está diseñado para que cualquier persona o técnico instale todo sin complicaciones.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h4>Descarga el Script</h4>
+          <p>Presiona el botón de descarga del programa o del Pack Todo-en-Uno para guardar el archivo ejecutable o script.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h4>Ejecuta como Administrador</h4>
+          <p>Haz clic derecho sobre el archivo descargado y presiona <strong>"Ejecutar como Administrador"</strong> para otorgar los permisos necesarios.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h4>¡Listo y Optimizado!</h4>
+          <p>El instalador realizará todo el trabajo silenciosamente en segundo plano. Cuando termine, tendrás todos los accesos en tu escritorio.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE EL ESPECIALISTA Y CONTACTO -->
+    <section class="contact-section" id="contacto">
+      <div class="contact-card">
+        <div>
+          <div class="profile-header">
+            <div class="profile-avatar">
+              <div class="profile-avatar-inner">
+                <i class="fa-solid fa-user-shield"></i>
+              </div>
+            </div>
+            <div class="profile-details">
+              <h3>CRISTIAN DANTE REYES SANDOVAL</h3>
+              <p><i class="fa-solid fa-circle-check" style="color: #38bdf8;"></i> Especialista en Soporte & Automatización TI</p>
+            </div>
+          </div>
+          <p style="color: #94a3b8; margin-bottom: 24px; font-size: 0.98rem; line-height: 1.7;">
+            ¿Necesitas soporte técnico personalizado, configuración de equipos corporativos o automatización de procesos a medida para tu empresa o negocio? Contáctame de forma directa para una atención rápida y profesional.
+          </p>
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; gap: 8px; color: #cbd5e1; font-size: 0.9rem;">
+              <i class="fa-solid fa-screwdriver-wrench" style="color: #38bdf8;"></i> Soporte Técnico Remoto
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; color: #cbd5e1; font-size: 0.9rem;">
+              <i class="fa-solid fa-laptop-code" style="color: #c084fc;"></i> Scripts a Medida
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; color: #cbd5e1; font-size: 0.9rem;">
+              <i class="fa-solid fa-shield-virus" style="color: #34d399;"></i> Optimización de Windows
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-box">
+          <h4><i class="fa-solid fa-paper-plane" style="color: #38bdf8;"></i> Canales de Comunicación</h4>
+          <div class="contact-links">
+            <a href="https://wa.me/51902344310?text=Hola%20Especialista%20Cristian%20Dante%20Reyes,%20vi%20tu%20pagina%20y%20deseo%20consultar%20sobre%20tus%20servicios%20y%20programas." target="_blank" rel="noopener noreferrer" class="btn-contact btn-whatsapp">
+              <span><i class="fa-brands fa-whatsapp"></i> Chat directo por WhatsApp</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-contact btn-github">
+              <span><i class="fa-brands fa-github"></i> Repositorio en GitHub</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL DE DESCARGA E INSTRUCCIONES RÁPIDAS -->
+  <div class="modal-backdrop" id="download-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <div class="modal-header">
+        <div class="modal-icon-badge" id="modal-app-icon">
+          <i class="fa-solid fa-box"></i>
+        </div>
+        <h3 id="modal-title">Nombre del Software</h3>
+        <p id="modal-subtitle">Subtítulo descriptivo</p>
+      </div>
+
+      <div class="modal-instructions">
+        <h5><i class="fa-solid fa-lightbulb"></i> Instrucciones de Instalación Rápida:</h5>
+        <ul class="modal-steps-mini" id="modal-steps-list">
+          <!-- Generado dinámicamente -->
+        </ul>
+      </div>
+
+      <div class="modal-actions">
+        <a id="modal-direct-download" href="#" class="btn btn-primary" style="width: 100%;">
+          <i class="fa-solid fa-cloud-arrow-down"></i>
+          <span>Confirmar Descarga Directa</span>
+        </a>
+      </div>
+    </div>
   </div>
 
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <div class="wrapper">
+      <p>
+        &copy; 2026 <strong>Especialista Cristian Dante Reyes Sandoval</strong>. Todos los derechos reservados.
+      </p>
+      <p style="margin-top: 6px; font-size: 0.82rem; color: #64748b;">
+        Diseñado para despliegue rápido y alojamiento estático en <strong>GitHub Pages</strong>.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts JS -->
+  <script src="js/particles.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
