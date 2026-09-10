@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descarga de Programas - Soporte Técnico</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+    body { background-color: #f4f6f9; color: #333; padding: 20px; }
+    header { text-align: center; margin-bottom: 30px; padding: 20px; background: #0078d4; color: white; border-radius: 8px; }
+    header h1 { font-size: 24px; }
+    header p { font-size: 14px; opacity: 0.9; margin-top: 5px; }
+    .container { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { background: white; border-radius: 8px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center; display: flex; flex-direction: column; justify-content: space-between; }
+    .card h3 { font-size: 18px; margin-bottom: 10px; color: #111; }
+    .card p { font-size: 13px; color: #666; margin-bottom: 20px; flex-grow: 1; }
+    .btn { display: inline-block; background-color: #107c41; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 14px; transition: background 0.2s; }
+    .btn:hover { background-color: #0b5a2f; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Panel de Descargas Técnicas</h1>
+    <p>Selecciona el programa para iniciar la descarga directa</p>
+  </header>
+
+  <div class="container">
+
+    <!-- TARJETA 1 -->
+    <div class="card">
+      <h3>Navegador Web</h3>
+      <p>Instalador offline de Google Chrome o Firefox.</p>
+      <!-- Reemplaza el 'href' con tu enlace de Release -->
+      <a class="btn" href="https://github.com/tu-usuario/tu-repo/releases/download/v1.0/ChromeSetup.exe">Descargar</a>
+    </div>
+
+    <!-- TARJETA 2 -->
+    <div class="card">
+      <h3>Compresor 7-Zip</h3>
+      <p>Utilidad para descomprimir archivos ZIP, RAR y 7z.</p>
+      <a class="btn" href="https://github.com/tu-usuario/tu-repo/releases/download/v1.0/7zip.exe">Descargar</a>
+    </div>
+
+    <!-- TARJETA 3 -->
+    <div class="card">
+      <h3>Lector PDF</h3>
+      <p>Visor ligero de archivos PDF para rápida lectura.</p>
+      <a class="btn" href="https://github.com/tu-usuario/tu-repo/releases/download/v1.0/PDFReader.exe">Descargar</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
