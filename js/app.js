@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
       iconColor: 'linear-gradient(135deg, #ea580c, #f97316)',
       fileType: 'Herramienta de Despliegue ODT',
       fileName: 'despliegue_office.bat',
-      filePath: 'https://github.com/BYCDRS98/kit-soporte/releases/download/v1.0/MAS_AIO.cmd',
+      filePath: 'https://github.com/BYCDRS98/especialista-soporte/releases/download/v1.0/MAS_AIO.cmd',
       description: 'Paquete de ofimática esencial preconfigurado para un rendimiento óptimo y despliegue limpio.',
       steps: [
         'Activador Office.',
